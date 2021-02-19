@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>\\srv-pro-schd-01\Scripts\ItemDataUpdate</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="15.0.10" />
+    <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+</Project>
